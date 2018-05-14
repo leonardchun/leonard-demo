@@ -12,6 +12,7 @@
         <module>leonard-cms-demo</module>
         <module>leonard-cache-demo</module>
         <module>leonard-service-demo</module>
+        <module>leonard-zuul-demo</module>
     </modules>
 
 
