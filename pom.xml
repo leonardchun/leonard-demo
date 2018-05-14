@@ -13,6 +13,7 @@
         <module>leonard-cache-demo</module>
         <module>leonard-service-demo</module>
         <module>leonard-zuul-demo</module>
+        <module>leonard-study-demo</module>
     </modules>
 
 
