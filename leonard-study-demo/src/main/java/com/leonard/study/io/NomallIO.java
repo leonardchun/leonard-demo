@@ -1,4 +1,4 @@
-package study.io;
+package com.leonard.study.io;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

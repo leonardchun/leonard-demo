@@ -1,4 +1,4 @@
-package study.thread;
+package com.leonard.study.thread;
 
 public class MyThread extends Thread {
 
