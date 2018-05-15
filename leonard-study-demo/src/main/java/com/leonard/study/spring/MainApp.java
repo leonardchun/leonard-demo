@@ -10,6 +10,7 @@ public class MainApp {
                 new ClassPathXmlApplicationContext("Beans.xml");
         HelloWorldSpring obj = (HelloWorldSpring) context.getBean("HelloWorldSpring");
         obj.getMessage();
-        System.out.println(obj.getMessage());
+        System.out.println("我是消息：" + obj.getMessage());
+        System.out.println("我是名称：" + obj.getUserName());
     }
 }

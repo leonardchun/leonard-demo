@@ -7,6 +7,7 @@
 
     <bean id="HelloWorldSpring" class="com.leonard.study.spring.HelloWorldSpring">
         <property name="message" value="Hello World Srping Doem!"/>
+        <property name="userName" value="Leonard"/>
     </bean>
 
 </beans>
