@@ -21,9 +21,12 @@ public class TestController {
     @Autowired
     private SystemProperties systemProperties;
 
+    private EurekaHelper eurekaHelper;
+
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public String hello(){
         String  applicationName = systemProperties.getApplicationName();
-        return "Hello Leonard!" + applicationName;
+        String ipAndPort = eurekaHelper.getServiceHostPort(applicationName);
+        return "Hello Leonard!" + applicationName + "IP和端口 " + ipAndPort;
     }
 }

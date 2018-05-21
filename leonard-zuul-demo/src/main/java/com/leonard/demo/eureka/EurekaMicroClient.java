@@ -9,5 +9,8 @@ package com.leonard.demo.eureka;
  */
 public class EurekaMicroClient {
 
+    private EurekaHelper eurekaHelper;
+
+
 
 }
