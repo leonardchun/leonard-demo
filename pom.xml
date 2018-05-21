@@ -15,6 +15,7 @@
         <module>leonard-zuul-demo</module>
         <module>leonard-study-demo</module>
         <module>leonard-utils-modules</module>
+        <module>leonard-eureka-server</module>
     </modules>
 
 
