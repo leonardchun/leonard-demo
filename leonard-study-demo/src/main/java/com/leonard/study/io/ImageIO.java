@@ -7,7 +7,7 @@ import java.io.*;
  * 版权：Copyright © Fable  Data Technology NanJing Co , Ltd.
  * 描述：〈IO 流乱码〉
  * 创建人： wanghaichun
- * 创建时间：2018-06-04 02:10 PM
+ * 创建时间：2018-06-04 02:10 PMchun
  */
 public class ImageIO {
 
