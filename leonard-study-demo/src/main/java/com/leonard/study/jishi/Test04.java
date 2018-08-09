@@ -1,5 +1,7 @@
 package com.leonard.study.jishi;
 
+import java.util.Scanner;
+
 /**
  * @author leonard
  * @date 2018/8/9 13:03
@@ -7,19 +9,29 @@ package com.leonard.study.jishi;
 public class Test04 {
 
     public static void main(String[] args) {
-        System.out.println(method(153));
+        Scanner x = new Scanner(System.in);
+        System.out.print("请输入一个整数：");
+        int num = x.nextInt();
+        System.out.println(method(num));
     }
-    public static boolean method(int a){
+
+    public static boolean method(int a) {
+        String aStr = String.valueOf(a);
+        //数字的位数
+        int num = aStr.length();
         boolean flag = false;
-        int a1 = a/100%10;
-        int a2 = a%100/10;
-        int a3 = a%100%10;
-        System.out.println(a1+" "+a2+" "+a3);
-        if(a== a1*a1*a1+a2*a2*a2+a3*a3*a3){
+        int lifang = 0;
+        int[] arr = new int[num];
+        for (int i = 0; i < num; i++) {
+            arr[i] = Integer.valueOf(aStr.substring(i, i + 1));
+        }
+        for (int a1 : arr) {
+            lifang  +=  a1 * a1 * a1;
+        }
+        System.out.println("各位的立方值为”" + lifang);
+        if (a == lifang) {
             flag = true;
         }
         return flag;
     }
-
-
 }
