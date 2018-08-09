@@ -3,6 +3,8 @@ package com.leonard.study.jishi;
 import java.util.Scanner;
 
 /**
+ * 输入一个数，计算它的每个位数字的立方之和是否等于本事，等于输出true 不等于输出false
+ *
  * @author leonard
  * @date 2018/8/9 13:03
  */
@@ -26,7 +28,7 @@ public class Test04 {
             arr[i] = Integer.valueOf(aStr.substring(i, i + 1));
         }
         for (int a1 : arr) {
-            lifang  +=  a1 * a1 * a1;
+            lifang += a1 * a1 * a1;
         }
         System.out.println("各位的立方值为”" + lifang);
         if (a == lifang) {
