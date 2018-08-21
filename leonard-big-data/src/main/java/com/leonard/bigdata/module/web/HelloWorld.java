@@ -28,9 +28,4 @@ public class HelloWorld {
         return systemProperties.getName();
     }
 
-    @RequestMapping(value = "/getHost", method = RequestMethod.GET)
-    @ApiOperation(value = "获取配置文件值", notes = "获取配置文件值")
-    public String getHost() {
-        return systemProperties.getName();
-    }
 }
