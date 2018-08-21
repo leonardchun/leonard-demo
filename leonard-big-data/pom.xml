@@ -29,7 +29,7 @@
     <dependencies>
 
         <!-- Hadoop start -->
-        <dependency>
+       <!-- <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
             <version>${hadoopVersion}</version>
@@ -48,7 +48,7 @@
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
             <version>${hadoopVersion}</version>
-        </dependency>
+        </dependency>-->
         <!-- Hadoop -->
 
         <!-- 通用配置 -->

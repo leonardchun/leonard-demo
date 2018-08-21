@@ -1,3 +1,4 @@
+/*
 package com.leonard.bigdata.module.hadoop;
 
 import org.apache.hadoop.fs.FsUrlStreamHandlerFactory;
@@ -8,10 +9,12 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+*/
 /**
  * @author leonard
  * @date 2018/8/1 15:43
- */
+ *//*
+
 public class URLCat {
     static {
         URL.setURLStreamHandlerFactory(new FsUrlStreamHandlerFactory());
@@ -27,3 +30,4 @@ public class URLCat {
         }
     }
 }
+*/

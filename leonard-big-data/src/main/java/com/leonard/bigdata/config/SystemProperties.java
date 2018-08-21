@@ -1,6 +1,7 @@
 package com.leonard.bigdata.config;
 
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties(locations = "classpath:application.properties", prefix = "leonard.system")
 public class SystemProperties {
 
- /*   @Value("${server.address}")
-    private String serverAddress;*/
+    @Value("${leonaed.system.name}")
+    private String name;
 
 }
