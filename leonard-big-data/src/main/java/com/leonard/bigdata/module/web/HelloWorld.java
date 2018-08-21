@@ -22,10 +22,6 @@ public class HelloWorld {
     @Autowired
     private SystemProperties systemProperties;
 
-    /**
-     * swagger 接口
-     * @return
-     */
     @RequestMapping(value = "/getSystemProperties", method = RequestMethod.GET)
     @ApiOperation(value = "获取配置文件值", notes = "获取配置文件值")
     public String getWebserviceUrl() {
