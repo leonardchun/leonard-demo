@@ -1,3 +1,4 @@
+/*
 package com.leonard.bigdata;
 
 import org.junit.Test;
@@ -10,10 +11,12 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
+*/
 /**
  * @author leonard
  * @date 2018/8/21 15:22
- */
+ *//*
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class PhoenixTest {
@@ -29,3 +32,4 @@ public class PhoenixTest {
         System.out.println(list);
     }
 }
+*/

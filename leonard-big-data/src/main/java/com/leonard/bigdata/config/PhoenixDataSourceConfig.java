@@ -1,3 +1,4 @@
+/*
 
 package com.leonard.bigdata.config;
 
@@ -20,11 +21,13 @@ public class PhoenixDataSourceConfig {
     @Autowired
     private DisConfig disConfig;
 
-    /**
+    */
+/**
      * phoenix 配置
      *
      * @return
-     */
+     *//*
+
     @Lazy
     @Bean("phoenixNamedJdbcTemplate")
     public NamedParameterJdbcTemplate phoenixNamedParameterJdbcTemplate() {
@@ -55,3 +58,4 @@ public class PhoenixDataSourceConfig {
     }
 }
 
+*/
