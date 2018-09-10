@@ -111,14 +111,58 @@
         </dependencies>
     </dependencyManagement>
 
+    <!--打包指定文件夹-->
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.1.1</version>
+                <configuration>
+                    <!--指定web.xml的路径  -->
+                    <webXml>WebRoot\WEB-INF\web.xml</webXml>
+                    <!--指定jsp、js、css的路劲  -->
+                    <warSourceDirectory>WebRoot</warSourceDirectory>
+                </configuration>
+            </plugin>
+            <!--打war包到指定的目录下 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.8</version>
+                <executions>
+                    <execution>
+                        <id>copy-war</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>${project.groupId}</groupId>
+                                    <artifactId>${project.artifactId}</artifactId>
+                                    <version>${project.version}</version>
+                                    <type>${project.packaging}</type>
+                                </artifactItem>
+                            </artifactItems>
+                            <!--   <outputDirectory>${dist.console.war.dir}</outputDirectory>   -->
+                            <!--指定war包保存地址-->
+                            <outputDirectory>D:\test</outputDirectory>
+                           <!-- <includes>
+                                <include>*.jar</include>
+                            </includes>-->
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
+
 
     <repositories>
         <repository>

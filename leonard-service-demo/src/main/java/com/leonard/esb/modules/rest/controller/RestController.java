@@ -30,6 +30,7 @@ import java.util.List;
 @Slf4j
 @org.springframework.web.bind.annotation.RestController
 @Api(value = "Rest管理", description = "Rest管理")
+@RequestMapping(value = "/api")
 public class RestController {
 
     @Autowired
