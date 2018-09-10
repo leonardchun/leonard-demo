@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties(locations = "classpath:application.properties", prefix = "leonard.system")
 public class SystemProperties {
 
-    @Value("${leonaed.system.name}")
+    @Value("${leonard.system.name}")
     private String name;
 
 }
