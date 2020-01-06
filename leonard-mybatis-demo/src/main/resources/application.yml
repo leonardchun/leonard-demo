@@ -1,0 +1,20 @@
+# DATASOURCE
+jdbc:
+    dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+    url: jdbc:mysql://127.0.0.1:3306/leonard-demo-003?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    databaseName: leonard-demo-003
+    serverName: 127.0.0.1
+    username: root
+    password: root
+    cachePrepStmts: true
+    prepStmtsSize: 250
+    prepStmtsCacheSqlLimit: 2048
+    userServerPrepStmts: true
+
+
+
+ # MyBatis
+mybatis:
+        typeAliasesPackage: com.example.api.*
+        mapperLocations: classpath:/mappers/*.xml
+        configLocation: classpath:/mybatis-config.xml
