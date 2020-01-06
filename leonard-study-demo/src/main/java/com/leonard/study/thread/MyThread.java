@@ -14,6 +14,10 @@ public class MyThread extends Thread {
                 System.out.println(name + "运行：" + i);
                 sleep(10);
             }
+            for (int i = 0; i < 5; i++) {
+                System.out.println(name + "运行：" + i);
+                sleep(10);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
