@@ -17,6 +17,8 @@
         <module>leonard-utils-modules</module>
         <module>leonard-eureka-server</module>
         <module>leonard-big-data</module>
+        <module>leonard-mybatis-demo</module>
+        <module>leonard-tomcat-demo</module>
     </modules>
 
 
